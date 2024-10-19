@@ -116,8 +116,8 @@ export default function Home() {
       <div className="flex flex-row gap-4 p-5">
 
 
-        {[1, 2, 3, 4, 5].map(() =>
-          <BasicCard />
+        {[1, 2, 3, 4, 5].map((i, j) =>
+          <BasicCard  key={j}/>
         )}
 
 
@@ -136,7 +136,7 @@ export default function Home() {
           "Herbs"].map((i) =>
 
 
-            <div className="rounded-md border-2 border-stone-900 text-stone-900 font-semibold px-4 py-1 hover:bg-slate-400/10 hover:cursor-pointer">
+            <div key={i} className="rounded-md border-2 border-stone-900 text-stone-900 font-semibold px-4 py-1 hover:bg-slate-400/10 hover:cursor-pointer">
               {i}
             </div>
 
